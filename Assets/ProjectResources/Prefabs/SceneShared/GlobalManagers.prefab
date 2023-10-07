@@ -1,0 +1,545 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8290353894128797978
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8290353894128797977}
+  - component: {fileID: 8290353894128797983}
+  - component: {fileID: 8290353894128797976}
+  m_Layer: 0
+  m_Name: AudioManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8290353894128797977
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894128797978}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 195.13118, y: -116.25297, z: 443.7916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8290353894256014403}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &8290353894128797983
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894128797978}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &8290353894128797976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894128797978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b52f921f7a6601f428bb66b36a721f4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newMasterVolume: 0
+  backgroundMusicSource: {fileID: 8290353894128797983}
+  sfxPrefab: {fileID: 5247132223284916620, guid: 1ec34b6b4d9b98748bcd5eb8bd92b5ce, type: 3}
+  maxSimultaneousSfxCount: 5
+  startMenuPlaylist:
+  - {fileID: 8300000, guid: efc9dd5a90515f54681dff1c057df4f1, type: 3}
+  - {fileID: 8300000, guid: 302ea3af72e32e44783c766613b74391, type: 3}
+  - {fileID: 8300000, guid: d284f089b37732d41b7aae5388ee1fda, type: 3}
+  gamePlaylist:
+  - {fileID: 8300000, guid: 1880dea9c6f9ea043a08c504ec712026, type: 3}
+  - {fileID: 8300000, guid: d9fb3bcaeb34de1428824aaaefcda4f2, type: 3}
+  - {fileID: 8300000, guid: 733ba0d3c908e5f41bc555804057bf7b, type: 3}
+  - {fileID: 8300000, guid: e5b199aa8933bfa4cbfe8b338450c51d, type: 3}
+  - {fileID: 8300000, guid: ee5bee5ea3cf617458182ba690218156, type: 3}
+  - {fileID: 8300000, guid: 147a436218df51d4c8e1adcb02c3880e, type: 3}
+  bossPlaylist:
+  - {fileID: 8300000, guid: 375a7f88806edf44bb2b10294e547fce, type: 3}
+  - {fileID: 8300000, guid: a322a48c536bc474585770e5db77b2b4, type: 3}
+  - {fileID: 8300000, guid: b9bbd380b6a709e4fb6c80d46a6cdcb5, type: 3}
+  winGame: {fileID: 8300000, guid: 979a088a3d416e54a99eb0c544f296b3, type: 3}
+  loseGame: {fileID: 8300000, guid: c014a6f41fa67284291ea258a96841eb, type: 3}
+  sceneTransition: {fileID: 8300000, guid: fc44f5bcd0162544cad10418608f174e, type: 3}
+  buttonHover: {fileID: 8300000, guid: 046615e5f7847d547a4d3f6be997c420, type: 3}
+  buttonClicked: {fileID: 8300000, guid: b6307e0dc6c896c448ab1f15693a2d34, type: 3}
+  boxSelect: {fileID: 8300000, guid: 556c8140b9940d74c8276dcb9afd2917, type: 3}
+  damage: {fileID: 8300000, guid: 54463797a48255d48b83d4cf7f97b5da, type: 3}
+  heal: {fileID: 8300000, guid: 798fb0eca601e83408da7e0773b97c3d, type: 3}
+  boxReveal: {fileID: 8300000, guid: a7f33342f2cfd8f48a7626416d0f3d07, type: 3}
+  boxNotReveal: {fileID: 8300000, guid: 8cd44549c21456c468cedc3d789567e8, type: 3}
+  boxDelete: {fileID: 8300000, guid: 5e58228f32171b74abd14f3e3d2d4cc1, type: 3}
+  popupMsg: {fileID: 8300000, guid: 002a9db2ff748f94a887ee3393db6606, type: 3}
+  bannerSlide: {fileID: 8300000, guid: a8272a8bce3e7e8428014f4730a4cfc2, type: 3}
+  overlaySlideDown: {fileID: 8300000, guid: 028d83c23a529034b83c8e81606977b9, type: 3}
+  overlaySlideUp: {fileID: 8300000, guid: ab731f12e8e90d04cbf443f8897ffe2d, type: 3}
+  lootSlide: {fileID: 8300000, guid: 0232e73af7683384f9682a03c5033dbe, type: 3}
+  bossStage: {fileID: 8300000, guid: f211b903fb1904b48902ee4e3018b504, type: 3}
+  lantern: {fileID: 8300000, guid: fb02ea62329e79e47b9d8c769a0276b0, type: 3}
+  map: {fileID: 8300000, guid: 02a96a884e5f3164694ae0c224cb0725, type: 3}
+  feast: {fileID: 8300000, guid: 896c4b662071c0046a99be7ca66ece06, type: 3}
+  sword: {fileID: 8300000, guid: 079f707c83f420744a50dc50065aae74, type: 3}
+  wand: {fileID: 8300000, guid: c0898e062ba4d9740b51cbd56e909c83, type: 3}
+  rune: {fileID: 8300000, guid: db09c40b2c0879e4f9fcfd345248cd3d, type: 3}
+  teleport: {fileID: 8300000, guid: 465e315b3dca1da4c918dbdedcbafeca, type: 3}
+--- !u!1 &8290353894256014429
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8290353894256014403}
+  - component: {fileID: 8290353894256014428}
+  m_Layer: 0
+  m_Name: GlobalManagers
+  m_TagString: GlobalObject
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8290353894256014403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894256014429}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -195.13118, y: 116.25297, z: -443.7916}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 8290353894128797977}
+  - {fileID: 8290353894926244747}
+  - {fileID: 8290353894317168858}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8290353894256014428
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894256014429}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05df4aa28cb55be479c7c155860ee592, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8290353894317168859
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8290353894317168858}
+  - component: {fileID: 8290353894317168857}
+  m_Layer: 0
+  m_Name: WordDatabaseManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8290353894317168858
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894317168859}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8290353894256014403}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8290353894317168857
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894317168859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: be6dfdd2053dc8a4dacdd9c0c27d7640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &8290353894926244740
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8290353894926244747}
+  - component: {fileID: 8290353894926244746}
+  m_Layer: 0
+  m_Name: GameInformation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8290353894926244747
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894926244740}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 213.48863, y: 312.1342, z: -716.01917}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8290353894256014403}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8290353894926244746
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8290353894926244740}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fbeb6e3ac9ee394cb2d62512bd77242, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerSave:
+    advDiffModes: 0
+    sfxVolume: 0.35
+    bgVolume: 0.45
+    colorblindFilter: 0
+    boxAnimationStyle: 1
+    profanityToggle: 1
+    gamePlaylistIndex: 0
+    bossPlaylistIndex: 0
+  audioScript: {fileID: 8290353894128797976}
+  assignPowerups:
+  - name: Sword
+    functionName: Sword
+    description: 'Grey out a random letter that is not in the secret word.
+
+'
+    icon: {fileID: 21300000, guid: 103a6638dfb03d84b81238e66274c1d9, type: 3}
+    pixelImage: {fileID: 21300000, guid: 90e99a7fde056a4418b9fe16084adb5c, type: 3}
+    rarity: 5
+    amountOwned: 0
+  - name: Lantern
+    functionName: Lantern
+    description: 'Remove 1 of any obstacle.
+
+'
+    icon: {fileID: 21300000, guid: 2aebe6b468dabcf478354f4d7b8886a8, type: 3}
+    pixelImage: {fileID: 21300000, guid: 5780c0f7daa138f46823eb60d93b7cc6, type: 3}
+    rarity: 1
+    amountOwned: 0
+  - name: Guide Map
+    functionName: Map
+    description: 'Select 1 letter in the previous guess that is not in the correct
+      position but in the secret word, then place it in the correct position.
+
+'
+    icon: {fileID: 21300000, guid: 6bfe191ed04e472438afba0abd870258, type: 3}
+    pixelImage: {fileID: 21300000, guid: 34102981c7e63b646b05313914b723a6, type: 3}
+    rarity: 1
+    amountOwned: 0
+  - name: Magic Staff
+    functionName: MagicStaff
+    description: 'Select 1 box effect and move it to any other vacant tile.
+
+'
+    icon: {fileID: 21300000, guid: 2cedbaa145be4a84297f5c0c7635316a, type: 3}
+    pixelImage: {fileID: 21300000, guid: 21ed692efe3d95a40bcb58ec97b4d87a, type: 3}
+    rarity: 2
+    amountOwned: 0
+  - name: Chaos Rune
+    functionName: ChaosRune
+    description: 'Randomly places 1 ''Chaos'' box effect in a vacant tile.
+
+'
+    icon: {fileID: 21300000, guid: ead1c6a8a3870a84a812d6b8d97a6766, type: 3}
+    pixelImage: {fileID: 21300000, guid: b9a847102a75c8c429a8f749008df6c2, type: 3}
+    rarity: 3
+    amountOwned: 0
+  - name: Feast
+    functionName: Feast
+    description: 'You gain health but at the cost of a small deduction in max health.
+
+'
+    icon: {fileID: 21300000, guid: 60869a94c393a2e44a1ff1b4124f8fd0, type: 3}
+    pixelImage: {fileID: 21300000, guid: d0c05b9125ed56349a5385e1a77547b7, type: 3}
+    rarity: 2
+    amountOwned: 0
+  assignEphemerals:
+  - name: Healing Fountain
+    description: You come across a mysterious fountain emitting crystal blue water.
+      Heal for 20% of your max health.
+    pixelImage: {fileID: 21300000, guid: ace8a02646afeda4880fc3cb14cad705, type: 3}
+    rarity: 100
+  - name: Basic Book
+    description: A torn commoner's book lies on the floor, perhaps it can grant you
+      untapped knowledge... Gain 1 extra attempt next round.
+    pixelImage: {fileID: 21300000, guid: 7972dd97521bb1c44ba8e3774391b996, type: 3}
+    rarity: 40
+  - name: Royal Book
+    description: A gold-plated source of knowledge lies on the floor, belonged to
+      a distant Queen. You feel honoured just to be in its presense. Gain 2 extra
+      attempts next round.
+    pixelImage: {fileID: 21300000, guid: 6b22156af64babe4f9bff6441c5b942f, type: 3}
+    rarity: 10
+  - name: Cursed Scroll
+    description: A tattered scroll emanating a cold, dark energy. Devouring its knowledge
+      may plague the user... Gain 2 extra attempts next round, but take damage equal
+      to 20% of your max health.
+    pixelImage: {fileID: 21300000, guid: 4b61215c56174cb489119b1357a5b77c, type: 3}
+    rarity: 20
+  - name: Rusty Armour
+    description: A rusted but sturdy armour, belonged to a well-respected ironclad.
+      Gain 20 max health and then heal for 20 health.
+    pixelImage: {fileID: 21300000, guid: 567fdd2e557fefc478f8aaa7ae56fb11, type: 3}
+    rarity: 50
+  - name: Tool Bag
+    description: A small bag scattering its contents onto the floor. Perhaps you
+      can scavange some use from it. Gain 3 random powerups.
+    pixelImage: {fileID: 21300000, guid: 93dbc8f96dc6c00418ba8f1a8e8992e4, type: 3}
+    rarity: 100
+  - name: Ancient Chest
+    description: A heavy iron chest slumbers upon the mossy grounds. You are eager
+      to open it, but it may stir an ancient protector. Gain 5 stacks of powerups
+      (each stack = the rarity of that powerup), but there are 3 more obstacles next
+      round.
+    pixelImage: {fileID: 21300000, guid: c8303e833b0ef184e99c1bc8940fff84, type: 3}
+    rarity: 10
+  - name: Lucky Coin
+    description: A simple dented copper coin lying amongst a bag of others, but you
+      feel a special connection with this one. There are 3 more benefits next round.
+    pixelImage: {fileID: 21300000, guid: 4605338a5a51383478a6b8eb3707e90c, type: 3}
+    rarity: 100
+  assignBoxEffects:
+  - index: 0
+    name: None
+    functionName: 
+    description: 
+    boxColor: {r: 0, g: 0, b: 0, a: 0}
+    bottomRowRestriction: 0
+    helpImage: {fileID: 0}
+    rarity: 0
+  - index: -1
+    name: Mist
+    functionName: Mist
+    description: 'This tile does not flip nor highlight any colours.
+
+'
+    boxColor: {r: 0.8980392, g: 0.8980392, b: 0.8980392, a: 1}
+    bottomRowRestriction: 1
+    helpImage: {fileID: 21300000, guid: adcb414614bcf984daa4135493c72770, type: 3}
+    rarity: 3
+  - index: -2
+    name: Lava
+    functionName: Lava
+    description: 'When this tile is flipped, if the letter within it is not in the
+      correct position, then you take 10 damage.
+
+'
+    boxColor: {r: 0.8980392, g: 0.8980392, b: 0.8980392, a: 1}
+    bottomRowRestriction: 0
+    helpImage: {fileID: 21300000, guid: a9a643d960bee7d49a652f0084b7fc2d, type: 3}
+    rarity: 5
+  - index: -3
+    name: Force Letter
+    functionName: ForceLetter
+    description: 'A randomly generated letter will be forcibly placed in this tile.
+      You cannot delete or change this letter. (Still flips as normal)
+
+'
+    boxColor: {r: 0.09803922, g: 0.7294118, b: 0.83137256, a: 1}
+    bottomRowRestriction: 1
+    helpImage: {fileID: 21300000, guid: 6ddc37eca0ddc584a91392c082785811, type: 3}
+    rarity: 2
+  - index: -4
+    name: Teleporter
+    functionName: TeleportIn
+    description: 'When this tile is flipped, the letter within it is transported
+      to another location in a future attempt (indicated by a line). It becomes a
+      ''Force Letter'' at that location.
+
+'
+    boxColor: {r: 0, g: 0.11764706, b: 0.7490196, a: 1}
+    bottomRowRestriction: 2
+    helpImage: {fileID: 21300000, guid: 00d7838521edb8b4497fda595b606d96, type: 3}
+    rarity: 2
+  - index: -5
+    name: Teleport Out
+    functionName: TeleportOut
+    description: 
+    boxColor: {r: 0.7647059, g: 0.47843137, b: 0.1764706, a: 1}
+    bottomRowRestriction: 1
+    helpImage: {fileID: 0}
+    rarity: 0
+  - index: -6
+    name: Ice
+    functionName: Ice
+    description: 'This tile does not flip when the guess is submitted similar to
+      ''Mist''. However, it flips once the next guess is submitted.
+
+'
+    boxColor: {r: 0.8980392, g: 0.8980392, b: 0.8980392, a: 1}
+    bottomRowRestriction: 2
+    helpImage: {fileID: 21300000, guid: c258dd208a04523418504bca98fb43ef, type: 3}
+    rarity: 5
+  - index: 1
+    name: Health Box
+    functionName: HealthBox
+    description: 'When this tile is flipped, if the letter within it is in the correct
+      position, then you gain health.
+
+'
+    boxColor: {r: 0.8980392, g: 0.8980392, b: 0.8980392, a: 1}
+    bottomRowRestriction: 0
+    helpImage: {fileID: 21300000, guid: 80e19f86dc9f81e4fa1a02ecfa303bb2, type: 3}
+    rarity: 5
+  - index: 2
+    name: Powerup Box
+    functionName: PowerupBox
+    description: 'When this tile is flipped, if the letter within it is in the correct
+      position, then you receive a random powerup indicated by the tile''s background.
+
+'
+    boxColor: {r: 0.8980392, g: 0.8980392, b: 0.8980392, a: 1}
+    bottomRowRestriction: 0
+    helpImage: {fileID: 21300000, guid: ce4fcc2e82e27ad428b097988882d2b2, type: 3}
+    rarity: 4
+  - index: 3
+    name: Chaos
+    functionName: Chaos
+    description: 'When entering a valid word, you can replace letters in this tile
+      with ANY letter you want.
+
+'
+    boxColor: {r: 1, g: 0.43137255, b: 0.8627451, a: 1}
+    bottomRowRestriction: 1
+    helpImage: {fileID: 21300000, guid: ddcfcf8765476fd4384eb75ddb86070a, type: 3}
+    rarity: 3
+  - index: 4
+    name: Veil
+    functionName: Veil
+    description: 'Before submitting the guess with this tile, you can click on this
+      tile (only if there is a letter within it). This tile will prematurely flip
+      the letter at the cost of 5 health.
+
+'
+    boxColor: {r: 0.5647059, g: 0.11764706, b: 0.8235294, a: 1}
+    bottomRowRestriction: 1
+    helpImage: {fileID: 21300000, guid: 1c08d0738046f8a4ca4454d422380845, type: 3}
+    rarity: 3
